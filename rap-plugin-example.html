@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用RAP插件来调用(mock)接口</title>
+</head>
+<body>
+    <!-- ajax lib, 随便你用什么, 只要能做ajax就行, 你直接用xhr也没人拦你 -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- RAP插件地址, 会重写ajax方法拦截请求 -->
+    <script src="http://localhost:8080/RAP/rap.plugin.js?projectId=10"></script>
+    <!-- 临时屏蔽RAP插件, 添加mode=0这个参数(默认处于模式3)
+         其他模式还有
+         0-disabled, 1-intercept all requests, 2-black list, 3-white list
+    <script src="http://localhost:8080/RAP/rap.plugin.js?projectId=10&mode=0"></script>
+    -->
+    <script>
+    // 对应 RAP 中设置的请求链接 -> /v1/users, 可以查看rap.plugin.js中生成的所有whiteList
+    $.getJSON('/v1/users', function(data) {
+        document.body.innerHTML = JSON.stringify(data, null, 4);
+        console.log(data);
+    });
+    </script>
+</body>
+</html>

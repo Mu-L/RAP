@@ -3,25 +3,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>RAP</groupId>
 	<artifactId>RAP</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.8.2</version>
 	<build>
 	</build>
 	<dependencies>
-		<dependency>
-			<groupId>com.alibaba.platform.shared</groupId>
-			<artifactId>buc.sso.client</artifactId>
-			<version>0.3.9</version>
-		</dependency>
-		<dependency>
-			<groupId>com.alibaba.platform.shared</groupId>
-			<artifactId>buc.sso.client</artifactId>
-			<version>0.3.9</version>
-			<classifier>sources</classifier>
-		</dependency>
-		<dependency>
-			<groupId>org.ocpsoft.prettytime</groupId>
-			<artifactId>prettytime</artifactId>
-			<version>3.2.3.Final</version>
-		</dependency>
+        <!-- 目前所有的depend都放在了WEB-INF/lib中, 暂不需要maven来管理 -->
 	</dependencies>
 </project>

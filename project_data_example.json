@@ -1,0 +1,57 @@
+{
+  "createDateStr": "2014-04-17",
+  "user": {
+    "name": "test",
+    "id": 1
+  },
+  "id": 10,
+  "version": "0.0.0.1",
+  "introduction": "",
+  "name": "某项目",
+  "moduleList": [
+    {
+      "id": 11,
+      "introduction": "",
+      "name": "某模块",
+      "pageList": [
+        {
+          "id": 15,
+          "introduction": "",
+          "name": "某页面",
+          "actionList": [
+            {
+              "id": 21,
+              "name": "某请求",
+              "description": "",
+              "requestType": "1",
+              "requestUrl": "",
+              "responseTemplate": "",
+              "requestParameterList": [
+                {
+                  "id": 69,
+                  "identifier": "reqParam",
+                  "name": "某请求参数",
+                  "remark": "",
+                  "parameterList": [],
+                  "validator": "",
+                  "dataType": "number"
+                }
+              ],
+              "responseParameterList": [
+                {
+                  "id": 70,
+                  "identifier": "resParam",
+                  "name": "某响应参数",
+                  "remark": "",
+                  "parameterList": [],
+                  "validator": "",
+                  "dataType": "number"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
