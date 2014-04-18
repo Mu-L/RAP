@@ -12,7 +12,7 @@ Rigel Automation Platform
 --------------------------------------
 在前后端分离的开发模式下，我们通常需要定义一份`接口文档`来规范接口的具体信息。如一个请求的地址、有几个参数、参数名称及类型含义等等。`RAP` 首先方便团队录入、查看和管理这些接口文档，并通过分析结构化的文档数据，重复利用并生成自测数据、提供自测控制台等等... 大幅度提升开发效率。
 
-[详细介绍](https://github.com/ufologist/RAP/INTRO.md)
+[详细介绍](https://github.com/ufologist/RAP/blob/master/INTRO.md)
 
 为什么fork了一份?
 --------------------------------------
@@ -39,4 +39,4 @@ RAP项目提供了多么实在的功能啊, 对于维护接口文档的各种痛
 相关文档
 --------------------------------------
 - [文档中心](http://thx.alibaba-inc.com/RAP/)
-- [使用手册](https://github.com/ufologist/RAP/MANUAL.md)
+- [使用手册](https://github.com/ufologist/RAP/blob/master/MANUAL.md)

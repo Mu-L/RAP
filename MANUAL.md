@@ -2,7 +2,7 @@
 目前文档还不是很全, 可能也比较杂乱, 请大家多多包涵...
 
 ## 本地部署 RAP 平台(J2EE Web)
-1. 准备 MySQL一枚, tomcat7 一个
+1. 准备 MySQL一枚, tomcat7 一只
 2. 连接到你的MySQL新增数据库(Schema) -> BosnAutoPlatformDB
    
    修改 [src/mysql.local.properties] 中连接数据库的用户名和密码
@@ -63,10 +63,10 @@ RAP通过 [Mock.js] 来生成mock数据
 
 
 
-[src/mysql.local.properties]:https://github.com/ufologist/RAP/src/mysql.local.properties
+[src/mysql.local.properties]:https://github.com/ufologist/RAP/blob/master/src/mysql.local.properties
 [Mock.js]:http://mockjs.com/
 [Mock.Random]:http://mockjs.com/#Mock.Random
-[rapActionSample.js]:https://github.com/ufologist/RAP/rapActionSample.js
-[rap-plugin-example.html]:https://github.com/ufologist/RAP/rap-plugin-example.html
-[mock.plugin/index.htm]:https://github.com/ufologist/RAP/WebContent/demo/mock.plugin/index.htm
-[project_data_example.json]:https://github.com/ufologist/RAP/project_data_example.json
+[rapActionSample.js]:https://github.com/ufologist/RAP/blob/master/rapActionSample.js
+[rap-plugin-example.html]:https://github.com/ufologist/RAP/blob/master/rap-plugin-example.html
+[mock.plugin/index.htm]:https://github.com/ufologist/RAP/blob/master/WebContent/demo/mock.plugin/index.htm
+[project_data_example.json]:https://github.com/ufologist/RAP/blob/master/project_data_example.json
