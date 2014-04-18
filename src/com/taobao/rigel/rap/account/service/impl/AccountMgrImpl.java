@@ -33,7 +33,7 @@ public class AccountMgrImpl implements AccountMgr {
 	@Override
 	public boolean validate(String account, String password) {
 		if (password == null) return false;
-		password = StringUtils.getDoubleMD5(password);
+//		password = StringUtils.getDoubleMD5(password);
 		return accountDao.validate(account, password);
 	}
 
