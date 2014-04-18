@@ -33,11 +33,15 @@
 
 ## 在接口详情中定义mock数据
 RAP通过 [Mock.js] 来生成mock数据
+
 1. 打开Mock按钮, 显示mock信息
+
 2. 可以在变量名中定义数次, 例如 dddd|5
+
 3. 可以在备注中定义mock占位符, 例如 @mock=@datetime
 
    更多用法请参考 [Mock.Random] 提供的完整方法（占位符）
+   
 4. 还可以参考 [rapActionSample.js]
 
 
