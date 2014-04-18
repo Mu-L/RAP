@@ -2,34 +2,34 @@
 	var URLS = {
 		org : {
 			home: {
-				'projects': '/org/projects.action',
-				'productlines': '/org/home/productlines.action',
-				'groups': '/org/home/groups.action'
+				'projects': RAP_ROOT_URL + '/org/projects.action',
+				'productlines': RAP_ROOT_URL + '/org/home/productlines.action',
+				'groups': RAP_ROOT_URL + '/org/home/groups.action'
 			},
 			group: {
-				'all':    '/org/group/all.action',
-				'update': '/org/group/update.action',
-				'delete': '/org/group/delete.action',
-				'create': '/org/group/create.action'
+				'all':    RAP_ROOT_URL + '/org/group/all.action',
+				'update': RAP_ROOT_URL + '/org/group/update.action',
+				'delete': RAP_ROOT_URL + '/org/group/delete.action',
+				'create': RAP_ROOT_URL + '/org/group/create.action'
 			},
 			productline: {
-				'all':    '/org/productline/all.action',
-				'update': '/org/productline/update.action',
-				'delete': '/org/productline/delete.action',
-				'create': '/org/productline/create.action'
+				'all':    RAP_ROOT_URL + '/org/productline/all.action',
+				'update': RAP_ROOT_URL + '/org/productline/update.action',
+				'delete': RAP_ROOT_URL + '/org/productline/delete.action',
+				'create': RAP_ROOT_URL + '/org/productline/create.action'
 			},
 			project: {
-				'create': '/project/create.action',
-				'delete': '/project/delete.action',
-				'update': '/project/update.action',
-				'search': '/project/search.action'
+				'create': RAP_ROOT_URL + '/project/create.action',
+				'delete': RAP_ROOT_URL + '/project/delete.action',
+				'update': RAP_ROOT_URL + '/project/update.action',
+				'search': RAP_ROOT_URL + '/project/search.action'
 			}, 
 			account: {
-				'all': '/account/all.action'
+				'all': RAP_ROOT_URL + '/account/all.action'
 			}
 		},
 		workspace: {
-			'mine': '/workspace/myWorkspace.action'
+			'mine': RAP_ROOT_URL + '/workspace/myWorkspace.action'
 		}
 	};
 	

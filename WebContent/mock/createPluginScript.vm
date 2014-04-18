@@ -1,3 +1,4 @@
+#parse('/tcom/const.inc.vm')
 #include('/stat/js/util/structureValidator.js')
 #include('/stat/js/util/mock-min.js')
 #parse('/stat/js/util/mock.plugin.js')

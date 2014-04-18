@@ -3,7 +3,7 @@
     var node = null;
     var blackList = [];
     var whiteList = [#foreach($url in $urlList)#if($velocityCount>1),#end"$url"#end];
-    var ROOT = 'rap.alibaba-inc.com';
+    var ROOT = '${urlRoot}';
     var LOST = "LOST";
     var PREFIX = "/mockjs/";
     var EMPTY_ARRAY = "EMPTY_ARRAY";

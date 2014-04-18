@@ -18,8 +18,12 @@
 
 ##----------------------页面请求action地址-------------------------------
 ## 配置工程的上下文路径
-#set($projectContext = "$!link.getContextPath()")
+##set($projectContext = "$!link.getContextPath()")
 ##set($projectContext = "$!link.getContextPath()/rap")
+## 这样配置才对吧?
+#set($projectContext = "$!request.getContextPath()")
+## 获得RAP web应用路URL的根地址, 例如 localhost:8080/RAP
+#set($urlRoot = "$!request.getServerName():" + "$!request.getServerPort()" + "$!projectContext")
 
 ## 配置静态资源请求的路径
 #set($staticRoot = "$!projectContext/stat")

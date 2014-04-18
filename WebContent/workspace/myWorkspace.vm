@@ -337,7 +337,7 @@
         <form name="formPluginCodeFloater">
             <div class="myfloater">
                 <div>
-                    <input id="pluginCodeInput" style="width:550px;margin:8px 0;" type="text" value="&lt;script src=&quot;http://rap.alibaba-inc.com/rap.plugin.js?projectId=$!projectId&quot;&gt;&lt;/script&gt;">
+                    <input id="pluginCodeInput" style="width:550px;margin:8px 0;" type="text" value="&lt;script src=&quot;http://${urlRoot}/rap.plugin.js?projectId=$!projectId&quot;&gt;&lt;/script&gt;">
                 </div>
                 <div class="div-floater-control">
                     <input type="button" class="btn" onclick="ws.closePluginCodeFloater();"  value="关闭" />

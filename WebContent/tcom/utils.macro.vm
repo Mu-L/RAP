@@ -529,6 +529,9 @@ baidu.dom.ready(function (){
 <link rel="stylesheet" href="${staticRoot}/css/rap.template.css?_r=$!timeStamp" type="text/css" media="screen">
 <link rel="stylesheet" href="${staticRoot}/js/ui/floater/css/floater.css?_r=$!timeStamp" type="text/css">
 
+<script>
+var RAP_ROOT_URL = location.protocol + '//' + '${urlRoot}';
+</script>
 <script type="text/javascript" src="${staticRoot}/js/core/jquery-2.1.0.min.js?_r=$!timeStamp"></script>
 <script type="text/javascript" src="${staticRoot}/js/core/tangram-1.2.1.js?_r=$!timeStamp"></script>
 <script type="text/javascript" src="${staticRoot}/js/core/tangram-fix.js?_r=$!timeStamp"></script>
