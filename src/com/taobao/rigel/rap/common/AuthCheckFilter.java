@@ -12,8 +12,8 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import com.alibaba.buc.sso.client.util.SimpleUserUtil;
-import com.alibaba.platform.buc.sso.common.dto.SimpleSSOUser;
+//import com.alibaba.buc.sso.client.util.SimpleUserUtil;
+//import com.alibaba.platform.buc.sso.common.dto.SimpleSSOUser;
 import com.taobao.rigel.rap.account.bo.User;
 import com.taobao.rigel.rap.account.service.AccountMgr;
 
@@ -42,41 +42,41 @@ public class AuthCheckFilter implements Filter {
 		SystemConstant.README_PATH = session.getServletContext().getRealPath(File.separator + "README.md");
 		SystemConstant.ROOT = session.getServletContext().getRealPath(File.separator);
 
-		if (!logined) {
-			SimpleSSOUser user = SimpleUserUtil
-					.findUser((HttpServletRequest) request);
-			if (user != null) {
-				String emailPrefix = user.getEmailPrefix();
-				User rapUser = accountMgr.getUser(emailPrefix);
-				if (rapUser == null) {
-					// proceed register
-					User newUser = new User();
-					newUser.setAccount(emailPrefix);
-					newUser.setPassword("RESERVED");
-					String name = user.getAliWW();
-					if (name == null || name.isEmpty()) {
-						name = user.getLastName();
-					}
-					newUser.setName(name);
-					newUser.setEmail(user.getEmailAddr());
-					getAccountMgr().addUser(newUser);
-					rapUser = accountMgr.getUser(emailPrefix);
-					if (rapUser == null) {
-						try {
-							throw new Exception("user register failed!");
-						} catch (Exception e) {
-							e.printStackTrace();
-						}
-					}
-				}
-				// proceed login
-				String account = rapUser.getAccount();
-				long userId = rapUser.getId();
-				session.setAttribute(ContextManager.KEY_ACCOUNT, account);
-				session.setAttribute(ContextManager.KEY_USER_ID, userId);
-			}
-
-		}
+//		if (!logined) {
+//			SimpleSSOUser user = SimpleUserUtil
+//					.findUser((HttpServletRequest) request);
+//			if (user != null) {
+//				String emailPrefix = user.getEmailPrefix();
+//				User rapUser = accountMgr.getUser(emailPrefix);
+//				if (rapUser == null) {
+//					// proceed register
+//					User newUser = new User();
+//					newUser.setAccount(emailPrefix);
+//					newUser.setPassword("RESERVED");
+//					String name = user.getAliWW();
+//					if (name == null || name.isEmpty()) {
+//						name = user.getLastName();
+//					}
+//					newUser.setName(name);
+//					newUser.setEmail(user.getEmailAddr());
+//					getAccountMgr().addUser(newUser);
+//					rapUser = accountMgr.getUser(emailPrefix);
+//					if (rapUser == null) {
+//						try {
+//							throw new Exception("user register failed!");
+//						} catch (Exception e) {
+//							e.printStackTrace();
+//						}
+//					}
+//				}
+//				// proceed login
+//				String account = rapUser.getAccount();
+//				long userId = rapUser.getId();
+//				session.setAttribute(ContextManager.KEY_ACCOUNT, account);
+//				session.setAttribute(ContextManager.KEY_USER_ID, userId);
+//			}
+//
+//		}
 
 		chain.doFilter(request, response);
 
