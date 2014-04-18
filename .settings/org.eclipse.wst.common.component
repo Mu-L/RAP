@@ -3,7 +3,7 @@
     <wb-module deploy-name="RAP">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="java-output-path" value="/RAP/build/classes"/>
-        <property name="context-root" value="ROOT"/>
+        <property name="java-output-path" value="/RAP/WEB-INF/classes"/>
+        <property name="context-root" value="RAP"/>
     </wb-module>
 </project-modules>
