@@ -1,21 +1,3 @@
-
-
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('Bosn Ma', 'mashengbo', '880622', 'mashengbo@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('Lim', 'linpanhui', '123456', 'linpanhui@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('tutBear', 'xiaoguang', '123456', 'xiao_guang@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('vivi', 'fenglu', '123456', 'fenglu@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('陈著', 'chenzhu', '123456', 'chenzhu@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('红光', 'zhanghongguang', '123456', 'zhanghongguang@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('李铮', 'lizheng', '123456', 'lizheng@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('allstar', 'ouyangxianwei', '123456', 'ouyangxianwei@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('怪叔叔', 'gengwei', '123456', 'gengwei@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('新乐', 'chenxin', '123456', 'chenxinle@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('兴渝', 'wangxingyu', '123456', 'wangxingyu@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('罗兵', 'luobing', '123456', 'luobing@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('庆润', 'luqingrun', '123456', 'qingrun@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('保玉', 'zhoubaoyu', '123456', 'zhoubaoyu@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('海峰', 'wenhaifeng', '123456', 'wenhaifeng@baidu.com', 0, now(), 0);
-INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('马林', 'xiemalin', '123456', 'xiemalin@baidu.com', 0, now(), 0);
 INSERT INTO tb_user (name, account, password, email, is_locked_out, last_login_date, incorrect_login_attempt) values ('tester', 'test', '123456', 'test@baidu.com', 0, now(), 0);
 
 INSERT INTO tb_role (name) VALUES ('god');
@@ -28,25 +10,6 @@ INSERT INTO tb_role (name) VALUES ('qa');
 
 INSERT INTO tb_role_and_user (user_id, role_id) VALUES (1, 2);
 INSERT INTO tb_role_and_user (user_id, role_id) VALUES (1, 5);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (2, 2);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (2, 5);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (7, 2);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (7, 3);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (3, 5);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (4, 5);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (5, 5);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (6, 5);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (8, 5);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (9, 5);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (10, 5);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (11, 4);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (12, 4);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (13, 4);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (14, 6);
-
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (15, 4);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (16, 4);
-INSERT INTO tb_role_and_user (user_id, role_id) VALUES (17, 4);
 
 
 
@@ -61,62 +24,6 @@ INSERT INTO tb_project (name, user_id, introduction) VALUES ('投诉系统', 1, 
 INSERT INTO tb_project (name, user_id, introduction) VALUES ('支持系统', 1, '24小时全程为您服务。');
 
 INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 1);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 2);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 3);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 4);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 5);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 6);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 7);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 8);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 9);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 10);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 11);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 12);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 13);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 14);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 15);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 16);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (1, 17);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 1);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 2);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 3);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 4);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 5);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 6);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 7);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 8);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 9);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 10);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 11);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 12);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 13);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 14);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 15);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 16);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (2, 17);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (3, 1);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (3, 3);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (3, 12);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (3, 14);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (4, 10);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (4, 13);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (6, 1);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (6, 2);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (6, 3);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (6, 4);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (6, 5);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (6, 6);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (6, 7);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (6, 8);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (6, 9);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (6, 10);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (6, 13);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (5, 7);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (5, 2);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (7, 9);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (8, 9);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (9, 5);
-INSERT INTO tb_project_and_user (project_id, user_id) VALUES (9, 6);
 
 
 INSERT INTO tb_module (project_id, name, introduction) VALUES (1, "行业分析设置", null);

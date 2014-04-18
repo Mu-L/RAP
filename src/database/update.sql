@@ -45,6 +45,13 @@ ADD COLUMN realname varchar(128) NOT NULL
 	DEFAULT '';
 
 ALTER TABLE tb_project
-ADD COLUMN update_time timestamp NOT NULL
-		DEFAULT now();
-	
+ADD COLUMN update_time timestamp NOT NULL;
+
+		
+		
+INSERT INTO tb_corporation (id, name, logo_url, user_id) VALUES ('1', '测试公司', '', '1');
+INSERT INTO tb_production_line (id, name, project_num, corporation_id, user_id) VALUES ('1', '测试产品线', '1', '1', '1');
+INSERT INTO tb_group (id, name, production_line_id, user_id) VALUES ('1', '测试分组', '1', '1');
+
+update tb_project set group_id = 1 where id >= 0;
+update tb_project set update_time = current_timestamp where id >= 0;
