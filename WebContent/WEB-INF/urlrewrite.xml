@@ -16,6 +16,7 @@
 			mockjs service
 		</note>
 		<from>^/mockjs/(\d*?)/(.*)$</from>
+        <!-- 注意: 不能去掉前面的斜杠, 否则会造成urlrewrite死循环内存溢出 -->
 		<to>/mock/createRule.action?id=$1&amp;pattern=/${escape:utf8:$2}</to>
 		<set type="response-header" name="Access-Control-Allow-Origin">*</set>
 		<set type="response-header" name="Access-Control-Allow-Headers">Origin, X-Requested-With, Content-Type, Accept</set>
@@ -34,6 +35,6 @@
 			mockjs plugin generator
 		</note>
 		<from>^/rap.plugin.js(.*)$</from>
-		<to type="redirect">/mock/createPluginScript.action$1</to>
+		<to type="redirect">mock/createPluginScript.action$1</to>
 	</rule>
 </urlrewrite>
