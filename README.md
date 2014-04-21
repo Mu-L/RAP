@@ -3,8 +3,8 @@ Rigel Automation Platform
 接口服务平台, 能够方便地定义出对外的(HTTP)接口服务, 支持模拟接口数据, 让前/后端针对这些定义的接口并行开发, 打造以接口为中心的开发模式
 
     @version v0.8.2(由THX RAP v0.8.1-2014-4-18版本修改而来)
-    @author  Bosn(霍雍), wangjeaf(思竹), Sun
-    @weibo   http://weibo.com/bosn, http://github.com/wangjeaf, https://github.com/ufologist
+    @author  Bosn(霍雍), wangjeaf(思竹)
+    @weibo   http://weibo.com/bosn, http://github.com/wangjeaf
     @mail    bosn@outlook.com, wangjeaf@gmail.com
 
 
