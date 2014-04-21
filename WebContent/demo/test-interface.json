@@ -1,0 +1,27 @@
+{
+  "body": {
+    "users": [
+      {
+        "address": "@area @region",
+        "lastLoginIp": "@ip",
+        "bio": "@paragraph",
+        "email": "@email",
+        "profiles": "@url",
+        "sex": [
+          "男",
+          "女"
+        ],
+        "birthday": "@date(yyyy-MM)",
+        "lastLogin": "@datetime",
+        "vip": "@boolean",
+        "avatar": "@image",
+        "id": "@natural",
+        "name": "@name"
+      }
+    ]
+  },
+  "head": {
+    "timestamp": "@natural(1390000000000, 1400000000000)",
+    "version": "0.1.0"
+  }
+}
